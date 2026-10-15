@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — Full-Stack Developer. Projects, skills, experience and contact." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">&lt;YN /&gt;</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-small btn-primary nav-cta">Hire Me</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">◐</button>
+        <button id="menuBtn" class="icon-btn menu-btn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> Available for work</p>
+        <h1>Hi, I'm <span class="gradient">Your Name</span><br />I build fast, clean web apps.</h1>
+        <p class="subtitle">Full-Stack Developer focused on JavaScript, React & Node. I turn ideas into responsive, accessible products. <span class="mono" id="typed"></span><span class="caret">▍</span></p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects →</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong data-count="3">3+</strong><span>Years exp.</span></div>
+          <div><strong data-count="24">24+</strong><span>Projects</span></div>
+          <div><strong data-count="12">12+</strong><span>Happy clients</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="code-card">
+          <div class="code-head"><span></span><span></span><span></span><em>developer.js</em></div>
+<pre><code><span class="k">const</span> dev = {
+  name: <span class="s">'Your Name'</span>,
+  role: <span class="s">'Full-Stack Developer'</span>,
+  stack: [<span class="s">'React'</span>, <span class="s">'Node'</span>, <span class="s">'TypeScript'</span>],
+  coffee: <span class="b">true</span>,
+  hireable: <span class="b">true</span>
+};
+<span class="k">export default</span> dev;</code></pre>
+          <div class="hero-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+            <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X">X</a>
+            <a href="mailto:hello@example.com" aria-label="Email">@</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container reveal">
+      <p class="section-tag">01 — About</p>
+      <h2>Developer who cares about <span class="gradient">details & users</span>.</h2>
+      <div class="two-col">
+        <p class="lead">I'm <strong>Your Name</strong>, a developer based in Your City. I specialize in building responsive websites and web apps with clean code, good performance, and thoughtful UX. Currently I'm focused on React + Node, and I love shipping side projects.</p>
+        <ul class="check-list">
+          <li>⚡ Performance-first, accessible builds</li>
+          <li>🎨 Clean UI with design-system thinking</li>
+          <li>🔧 API design, auth, databases & deployments</li>
+          <li>📚 Always learning — currently: TypeScript & testing</li>
+        </ul>
+      </div>
+      <div class="about-cards">
+        <div class="mini-card"><h3>Frontend</h3><p>React, Next.js, HTML/CSS, Tailwind, Vite</p></div>
+        <div class="mini-card"><h3>Backend</h3><p>Node.js, Express, PostgreSQL, REST, Prisma</p></div>
+        <div class="mini-card"><h3>Tools</h3><p>Git, Docker, GitHub Actions, Vercel, Figma</p></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container reveal">
+      <p class="section-tag">02 — Skills</p>
+      <h2>What I work with</h2>
+      <div class="skills-grid">
+        <div class="skill"><div class="skill-top"><span>JavaScript / TypeScript</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>React / Next.js</span><span>88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>Node.js / Express</span><span>82%</span></div><div class="bar"><i style="--w:82%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>HTML / CSS / Tailwind</span><span>92%</span></div><div class="bar"><i style="--w:92%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>PostgreSQL / MongoDB</span><span>75%</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>Git / Docker / CI</span><span>78%</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container reveal">
+      <p class="section-tag">03 — Projects</p>
+      <h2>Selected work</h2>
+      <p class="muted">Replace these 6 cards with your real projects. Each card has title, description, tags, and links.</p>
+      <div class="filter-row" id="filterRow">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="frontend">Frontend</button>
+        <button class="chip" data-filter="fullstack">Full-stack</button>
+        <button class="chip" data-filter="tool">Tools</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project" data-cat="fullstack">
+          <div class="proj-thumb p1">🛒</div>
+          <h3>ShopLite — E-commerce starter</h3>
+          <p>Full-stack store with cart, checkout, auth and admin dashboard. Next.js + Stripe + Postgres.</p>
+          <div class="tags"><span>Next.js</span><span>Stripe</span><span>Postgres</span></div>
+          <div class="proj-links"><a href="#" target="_blank" rel="noopener">Live ↗</a><a href="#" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+        <article class="project" data-cat="frontend">
+          <div class="proj-thumb p2">📊</div>
+          <h3>Dashly — Analytics dashboard</h3>
+          <p>Responsive dashboard with charts, dark mode and CSV export. React + Recharts.</p>
+          <div class="tags"><span>React</span><span>Recharts</span><span>Vite</span></div>
+          <div class="proj-links"><a href="#" target="_blank" rel="noopener">Live ↗</a><a href="#" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+        <article class="project" data-cat="fullstack">
+          <div class="proj-thumb p3">💬</div>
+          <h3>Ping — Realtime chat</h3>
+          <p>Rooms, DMs and typing indicators over WebSockets. Node + Socket.io + Redis.</p>
+          <div class="tags"><span>Node</span><span>Socket.io</span><span>Redis</span></div>
+          <div class="proj-links"><a href="#" target="_blank" rel="noopener">Live ↗</a><a href="#" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+        <article class="project" data-cat="tool">
+          <div class="proj-thumb p4">✅</div>
+          <h3>Taskflow CLI</h3>
+          <p>Markdown-based task runner for the terminal with git hooks. Published on npm.</p>
+          <div class="tags"><span>Node</span><span>CLI</span><span>npm</span></div>
+          <div class="proj-links"><a href="#" target="_blank" rel="noopener">Live ↗</a><a href="#" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+        <article class="project" data-cat="frontend">
+          <div class="proj-thumb p5">🌤️</div>
+          <h3>Atmo — Weather app</h3>
+          <p>Geolocation weather with hourly forecast and offline cache. PWA, 95+ Lighthouse.</p>
+          <div class="tags"><span>PWA</span><span>API</span><span>CSS</span></div>
+          <div class="proj-links"><a href="#" target="_blank" rel="noopener">Live ↗</a><a href="#" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+        <article class="project" data-cat="tool">
+          <div class="proj-thumb p6">🧩</div>
+          <h3>SnipVault</h3>
+          <p>Self-hosted code snippet manager with search, tags and sharing. Docker-ready.</p>
+          <div class="tags"><span>Express</span><span>SQLite</span><span>Docker</span></div>
+          <div class="proj-links"><a href="#" target="_blank" rel="noopener">Live ↗</a><a href="#" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container reveal">
+      <p class="section-tag">04 — Experience</p>
+      <h2>Where I've worked</h2>
+      <div class="timeline">
+        <div class="t-item"><span class="t-date">2024 — Now</span><h3>Frontend Developer · Freelance</h3><p>Shipping landing pages, dashboards and stores for 12+ clients. Avg. Lighthouse 95+, 30% faster load times.</p></div>
+        <div class="t-item"><span class="t-date">2022 — 2024</span><h3>Full-Stack Developer · Acme Co.</h3><p>Built internal tools and customer portal (React + Node). Cut support tickets 20% with self-serve flows.</p></div>
+        <div class="t-item"><span class="t-date">2021 — 2022</span><h3>Junior Web Developer · Studio X</h3><p>Converted Figma to responsive sites, maintained WordPress → headless migrations.</p></div>
+      </div>
+      <a href="#" class="btn btn-ghost" download>⬇ Download Résumé (replace with your PDF)</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container reveal">
+      <p class="section-tag">05 — Contact</p>
+      <h2>Let's build something <span class="gradient">together</span>.</h2>
+      <div class="contact-grid">
+        <div>
+          <p class="lead">Have a project, role, or just want to say hi? My inbox is open — I usually reply within 24h.</p>
+          <p class="contact-line">📧 <a href="mailto:hello@example.com">hello@example.com</a></p>
+          <p class="contact-line">📍 Your City · Open to remote</p>
+          <div class="hero-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://x.com/" target="_blank" rel="noopener">X ↗</a>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>Name<input name="name" required placeholder="Jane Doe" /></label>
+          <label>Email<input name="email" type="email" required placeholder="jane@company.com" /></label>
+          <label>Message<textarea name="message" rows="5" required placeholder="Hi! I'd like to talk about..."></textarea></label>
+          <button type="submit" class="btn btn-primary">Send Message →</button>
+          <p id="formMsg" class="form-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot-inner">
+      <span>© <span id="year"></span> Your Name. Built with plain HTML/CSS/JS.</span>
+      <a href="#top" id="toTop">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
